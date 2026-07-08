@@ -1,0 +1,587 @@
+.<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Toolkits - AI Wallet</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BACKGROUND DECORATIVE GLOWS -->
+    <div class="bg-glow-container">
+        <div class="glow-blob glow-blob-1"></div>
+        <div class="glow-blob glow-blob-2"></div>
+        <div class="glow-blob glow-blob-3"></div>
+    </div>
+    <div class="bg-grid-pattern"></div>
+
+    <!-- NAVBAR -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-wallet"></i> AI Wallet<span class="logo-dot"></span>
+            </a>
+            
+            <!-- CSS-only mobile menu toggle -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="ai-tools.html" class="nav-link active"><i class="fa-solid fa-laptop-code"></i> AI Tools</a></li>
+                <li><a href="about.html" class="nav-link"><i class="fa-solid fa-user-tie"></i> About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="page-hero-padding">
+        <!-- AI TOOLS SECTION -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-title">Explore Catalog</span>
+                    <h1 class="main-title text-center">Curated <span class="gradient-text">AI Toolkits</span></h1>
+                    <div class="divider"></div>
+                    <p class="desc">Browse through the top industry-grade artificial intelligence engines, categorized into five powerful departments for lightning-fast reference.</p>
+                </div>
+                
+                <!-- CSS-ONLY RADIO BUTTONS FOR TAB CONTROLLING -->
+                <input type="radio" name="category" id="tab-chat" class="tab-input" checked>
+                <input type="radio" name="category" id="tab-image" class="tab-input">
+                <input type="radio" name="category" id="tab-video" class="tab-input">
+                <input type="radio" name="category" id="tab-coding" class="tab-input">
+                <input type="radio" name="category" id="tab-search" class="tab-input">
+                
+                <!-- TABS NAVIGATION BAR -->
+                <div class="tabs-nav">
+                    <label for="tab-chat" class="tab-label chat-label">
+                        <i class="fa-solid fa-message-dots"></i> Chat AI
+                    </label>
+                    <label for="tab-image" class="tab-label image-label">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> Image AI
+                    </label>
+                    <label for="tab-video" class="tab-label video-label">
+                        <i class="fa-solid fa-clapperboard"></i> Video AI
+                    </label>
+                    <label for="tab-coding" class="tab-label coding-label">
+                        <i class="fa-solid fa-terminal"></i> CLI / Coding AI
+                    </label>
+                    <label for="tab-search" class="tab-label search-label">
+                        <i class="fa-solid fa-magnifying-glass"></i> Search AI
+                    </label>
+                </div>
+                
+                <!-- TOOLS CONTAINER -->
+                <div class="tools-container">
+                    
+                    <!-- CATEGORY 1: CHAT AI -->
+                    <div class="tab-content cat-chat">
+                        <!-- Tool Card 1 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-sparkles"></i> LLM</span>
+                                <img src="https://picsum.photos/seed/chatgpt/400/250" alt="ChatGPT" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">ChatGPT</h3>
+                                <p class="tool-card-desc">Developed by OpenAI, a conversational powerhouse for creative writing, planning, coding support, and in-depth reasoning tasks across diverse fields.</p>
+                                <a href="https://chatgpt.com" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Tool Card 2 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-brain"></i> Reasoning</span>
+                                <img src="https://picsum.photos/seed/claude/400/250" alt="Claude" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">Claude</h3>
+                                <p class="tool-card-desc">Anthropic’s flagship model, acclaimed for its exceptional linguistic nuance, advanced code comprehension, logic validation, and long-context documents.</p>
+                                <a href="https://claude.ai" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Tool Card 3 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-globe"></i> Ecosystem</span>
+                                <img src="https://picsum.photos/seed/gemini/400/250" alt="Gemini" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">Gemini</h3>
+                                <p class="tool-card-desc">Google's highly integrated multimodal intelligence, capable of processing photos, text, and videos while syncing with Google Workspace tools.</p>
+                                <a href="https://gemini.google.com" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Tool Card 4 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-bolt"></i> Speed</span>
+                                <img src="https://picsum.photos/seed/deepseek/400/250" alt="DeepSeek" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">DeepSeek</h3>
+                                <p class="tool-card-desc">A highly efficient, powerful open-source reasoning model disrupting the global AI landscape with stellar mathematics, logic, and coding metrics.</p>
+                                <a href="https://www.deepseek.com" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Tool Card 5 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-magnifying-glass"></i> Synthesis</span>
+                                <img src="https://picsum.photos/seed/perplexitychat/400/250" alt="Perplexity" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">Perplexity</h3>
+                                <p class="tool-card-desc">An outstanding conversational search engine that fetches accurate real-time information and presents answers with citations and web sources.</p>
+                                <a href="https://www.perplexity.ai" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Tool Card 6 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-windows"></i> Integration</span>
+                                <img src="https://picsum.photos/seed/copilot/400/250" alt="Microsoft Copilot" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">Microsoft Copilot</h3>
+                                <p class="tool-card-desc">Your daily AI companion integrated with Microsoft 365, utilizing GPT-4 to assist with document drafting, presentations, and web navigation.</p>
+                                <a href="https://copilot.microsoft.com" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CATEGORY 2: IMAGE AI -->
+                    <div class="tab-content cat-image">
+                        <!-- Tool Card 1 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-palette"></i> Artistry</span>
+                                <img src="https://picsum.photos/seed/midjourney/400/250" alt="Midjourney" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">Midjourney</h3>
+                                <p class="tool-card-desc">The industry standard for hyper-realistic and deeply artistic visual generation. Operates flawlessly on Discord for dynamic community building.</p>
+                                <a href="https://www.midjourney.com" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Tool Card 2 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-sliders"></i> Control</span>
+                                <img src="https://picsum.photos/seed/leonardo/400/250" alt="Leonardo AI" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">Leonardo AI</h3>
+                                <p class="tool-card-desc">An outstanding graphics engine offering creators extensive preset configurations, depth adapters, and real-time canvas canvas generation.</p>
+                                <a href="https://leonardo.ai" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Tool Card 3 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-shield"></i> Commercial Safe</span>
+                                <img src="https://picsum.photos/seed/firefly/400/250" alt="Adobe Firefly" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">Adobe Firefly</h3>
+                                <p class="tool-card-desc">Adobe’s creative generative suite, trained purely on authorized and public-domain content. Natively integrated into Photoshop and Illustrator.</p>
+                                <a href="https://firefly.adobe.com" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Tool Card 4 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-font"></i> Typography</span>
+                                <img src="https://picsum.photos/seed/ideogram/400/250" alt="Ideogram" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">Ideogram</h3>
+                                <p class="tool-card-desc">Highly recognized for its incredible capability to render crystal-clear, stunning typography and vector text styles embedded within visual assets.</p>
+                                <a href="https://ideogram.ai" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Tool Card 5 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-camera"></i> Anatomy</span>
+                                <img src="https://picsum.photos/seed/flux/400/250" alt="Flux" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">Flux</h3>
+                                <p class="tool-card-desc">Black Forest Labs' highly flexible open-weights image generator, leading benchmarks in anatomically correct hands, faces, and text render speeds.</p>
+                                <a href="https://blackforestlabs.ai" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CATEGORY 3: VIDEO AI -->
+                    <div class="tab-content cat-video">
+                        <!-- Tool Card 1 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-film"></i> Hollywood Style</span>
+                                <img src="https://picsum.photos/seed/runway/400/250" alt="Runway" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">Runway</h3>
+                                <p class="tool-card-desc">The industry giant powering cinematic visuals. Gen-2 and Gen-3 text-to-video capabilities give creators full physical camera control and scaling.</p>
+                                <a href="https://runwayml.com" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Tool Card 2 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-dragon"></i> Animation</span>
+                                <img src="https://picsum.photos/seed/pika/400/250" alt="Pika" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">Pika</h3>
+                                <p class="tool-card-desc">An interactive video engine perfect for creating cute cartoons, stunning 3D animations, and custom action sequences from text or static pictures.</p>
+                                <a href="https://pika.art" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Tool Card 3 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-glasses"></i> High Def</span>
+                                <img src="https://picsum.photos/seed/veo/400/250" alt="Veo" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">Veo</h3>
+                                <p class="tool-card-desc">Google's premium model built for highly complex cinematic storytelling, rendering physics and lighting in gorgeous, ultra-high-definition video.</p>
+                                <a href="https://deepmind.google/technologies/veo/" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Tool Card 4 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-user-astronaut"></i> Avatar</span>
+                                <img src="https://picsum.photos/seed/synthesia/400/250" alt="Synthesia" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">Synthesia</h3>
+                                <p class="tool-card-desc">Transform written scripts into highly professional presenter videos with life-like AI avatars. Speaks over 120 languages flawlessly.</p>
+                                <a href="https://www.synthesia.io" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Tool Card 5 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-space-shuttle"></i> Physics</span>
+                                <img src="https://picsum.photos/seed/luma/400/250" alt="Luma AI" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">Luma AI</h3>
+                                <p class="tool-card-desc">Known for "Dream Machine", Luma renders cinematic pans, physical world interactions, and complex action sequences in incredibly short times.</p>
+                                <a href="https://lumalabs.ai" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CATEGORY 4: CLI / CODING AI -->
+                    <div class="tab-content cat-coding">
+                        <!-- Tool Card 1 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-laptop-code"></i> IDE fork</span>
+                                <img src="https://picsum.photos/seed/cursor/400/250" alt="Cursor" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">Cursor</h3>
+                                <p class="tool-card-desc">An outstanding fork of VS Code engineered natively around Large Language Models. Write, review, refactor, and debug whole codebases with ease.</p>
+                                <a href="https://www.cursor.com" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Tool Card 2 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-code-pull-request"></i> Autocomplete</span>
+                                <img src="https://picsum.photos/seed/copilotcode/400/250" alt="GitHub Copilot" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">GitHub Copilot</h3>
+                                <p class="tool-card-desc">The pioneer developer companion, offering real-time auto-completions, functional suggestions, and conversational assistance inside standard editors.</p>
+                                <a href="https://github.com/features/copilot" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Tool Card 3 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-robot"></i> Agentic</span>
+                                <img src="https://picsum.photos/seed/windsurf/400/250" alt="Windsurf" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">Windsurf</h3>
+                                <p class="tool-card-desc">A state-of-the-art developer workspace presenting active coding agents that think, debug, and coordinate in perfect synchronization with your goals.</p>
+                                <a href="https://codeium.com/windsurf" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Tool Card 4 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-globe"></i> Web Dev</span>
+                                <img src="https://picsum.photos/seed/bolt/400/250" alt="Bolt" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">Bolt</h3>
+                                <p class="tool-card-desc">A browser-integrated agent that writes full-stack projects, spins up local development environments, and deploys scalable web platforms instantly.</p>
+                                <a href="https://bolt.new" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Tool Card 5 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-cloud"></i> Sandbox</span>
+                                <img src="https://picsum.photos/seed/replit/400/250" alt="Replit AI" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">Replit AI</h3>
+                                <p class="tool-card-desc">Collaborative online coding playground featuring built-in AI completion, instant containerized hosting, and an interactive agent-builder console.</p>
+                                <a href="https://replit.com" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CATEGORY 5: SEARCH AI -->
+                    <div class="tab-content cat-search">
+                        <!-- Tool Card 1 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-magnifying-glass"></i> Citations</span>
+                                <img src="https://picsum.photos/seed/perplexity/400/250" alt="Perplexity" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">Perplexity</h3>
+                                <p class="tool-card-desc">Merging deep language models with live indexing, delivering conversational answers packed with verified inline links and web source citations.</p>
+                                <a href="https://www.perplexity.ai" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Tool Card 2 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-circle-nodes"></i> Custom Agents</span>
+                                <img src="https://picsum.photos/seed/you/400/250" alt="You.com" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">You.com</h3>
+                                <p class="tool-card-desc">A flexible research engine offering custom modes for deep academic diving, content creation, coding support, and advanced mathematical processing.</p>
+                                <a href="https://you.com" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Tool Card 3 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-user-ninja"></i> Dev Focused</span>
+                                <img src="https://picsum.photos/seed/phind/400/250" alt="Phind" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">Phind</h3>
+                                <p class="tool-card-desc">The ultimate search engine customized explicitly for software engineers. Extracts clean solutions from technical sites and manuals in seconds.</p>
+                                <a href="https://www.phind.com" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Tool Card 4 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-shield-halved"></i> Privacy First</span>
+                                <img src="https://picsum.photos/seed/brave/400/250" alt="Brave AI" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">Brave AI</h3>
+                                <p class="tool-card-desc">A highly secure search indexing tool utilizing the integrated Leo AI assistant to summarize web contexts without recording user tracking files.</p>
+                                <a href="https://brave.com/search/" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Tool Card 5 -->
+                        <div class="tool-card">
+                            <div class="tool-img-container">
+                                <span class="tool-badge"><i class="fa-solid fa-face-smile"></i> Conversational</span>
+                                <img src="https://picsum.photos/seed/andi/400/250" alt="Andi" class="tool-card-img">
+                            </div>
+                            <div class="tool-card-body">
+                                <h3 class="tool-card-title">Andi</h3>
+                                <p class="tool-card-desc">A highly personable, conversational assistant that answers questions directly, summarizes useful URLs, and keeps navigation completely ad-free.</p>
+                                <a href="https://andisearch.com" target="_blank" class="tool-card-btn">
+                                    <span>Try Now <i class="fa-solid fa-external-link-alt"></i></span>
+                                    <i class="fa-solid fa-arrow-right-long arrow"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Brand Col -->
+                <div class="footer-brand-box">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fa-solid fa-wallet"></i> AI Wallet
+                    </a>
+                    <p class="footer-desc">
+                        A modern, high-performance visual repository storing the internet's most elite generative models, coding assistants, and search architectures.
+                    </p>
+                    <div class="footer-credit">
+                        Made with <i class="fa-solid fa-heart"></i> by <strong>Kartik Saxena</strong>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="footer-col-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link-item"><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                        <li class="footer-link-item"><a href="ai-tools.html" class="active"><i class="fa-solid fa-chevron-right"></i> AI Tools</a></li>
+                        <li class="footer-link-item"><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact info -->
+                <div>
+                    <h4 class="footer-col-title">Get In Touch</h4>
+                    <div class="footer-contact-info">
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Kartik Saxena</span>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>B.Tech CSE Student</span>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:kartik.saxena.btech@gmail.com">kartik.saxena.btech@gmail.com</a>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright-text">
+                    &copy; 2026 AI Wallet. All rights reserved. Built purely with HTML5 and CSS3.
+                </div>
+                <div class="footer-socials">
+                    <a href="#" class="footer-social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="footer-social-btn" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" class="footer-social-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer-social-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

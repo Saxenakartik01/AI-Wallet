@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Wallet - Your Personal AI Toolkit & Knowledge Vault</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BACKGROUND DECORATIVE GLOWS -->
+    <div class="bg-glow-container">
+        <div class="glow-blob glow-blob-1"></div>
+        <div class="glow-blob glow-blob-2"></div>
+        <div class="glow-blob glow-blob-3"></div>
+    </div>
+    <div class="bg-grid-pattern"></div>
+
+    <!-- NAVBAR -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-wallet"></i> AI Wallet<span class="logo-dot"></span>
+            </a>
+            
+            <!-- CSS-only mobile menu toggle -->
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="ai-tools.html" class="nav-link"><i class="fa-solid fa-laptop-code"></i> AI Tools</a></li>
+                <li><a href="about.html" class="nav-link"><i class="fa-solid fa-user-tie"></i> About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION & WEBSITE INTRODUCTION -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="hero-tagline-wrapper">
+                        <span class="tagline-pulse"></span>
+                        <span>AI Toolkit Hub </span>
+                    </div>
+                    <h1 class="hero-title">
+                        Keep the Power of <span class="gradient-text">AI Tools</span> in Your Pocket
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        Designed & Developed by Kartik Saxena.
+                    </h2>
+                    <p class="hero-desc">
+    AI Wallet is your personal hub to discover, organize, and access the best AI tools in one place. It helps you save time, stay organized, and quickly find the right AI for coding, design, content creation, and everyday tasks.
+</p>
+
+                    <div class="hero-btns">
+                        <a href="ai-tools.html" class="btn btn-primary"><i class="fa-solid fa-cubes-stacked"></i> Explore AI Tools</a>
+                        <a href="mailto:kartiksaxena748@gmail.com" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> Mail</a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="visual-globe"></div>
+                    <!-- Float mock card -->
+                    <div class="wallet-card-mock">
+                        <div class="mock-chip"></div>
+                        <div>
+                            <div class="mock-title">Wallet Balance</div>
+                            <div class="mock-balance">99+ AI Engines</div>
+                        </div>
+                        <div class="mock-brand">AI Wallet</div>
+                    </div>
+                    <!-- Floating decorative icons -->
+                    <div class="floating-icon-ai float-icon-1">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <div class="floating-icon-ai float-icon-2">
+                        <i class="fa-solid fa-bolt-lightning"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECOND SECTION: WHY AI WALLET? -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-title">Core Value</span>
+                    <h2 class="main-title text-center">Why <span class="gradient-text">AI Wallet</span>?</h2>
+                    <div class="divider"></div>
+                    <p class="desc">Discover how AI Wallet transforms your digital interaction, providing a unified space to maximize your productivity with state-of-the-art tools.</p>
+                </div>
+                
+                <div class="why-grid">
+                    <!-- Card 1 -->
+                    <div class="info-card">
+                        <div class="info-card-icon-wrapper">
+                            <i class="fa-solid fa-floppy-disk"></i>
+                        </div>
+                        <h3 class="info-card-title">Save All AI Tools</h3>
+                        <p class="info-card-desc">Keep your essential generative engines, text generators, and image builders secure and structured. Never search for links repeatedly.</p>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="info-card">
+                        <div class="info-card-icon-wrapper">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <h3 class="info-card-title">Never Forget Websites</h3>
+                        <p class="info-card-desc">Catalog niche neural engines, helpful utilities, and deep learning platforms before they disappear into browser history clutter.</p>
+                    </div>
+                    
+                    <!-- Card 3 -->
+                    <div class="info-card">
+                        <div class="info-card-icon-wrapper">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <h3 class="info-card-title">Easy Access</h3>
+                        <p class="info-card-desc">With clean categorizations, load and interact with any required tool instantly from a beautiful unified visual command center.</p>
+                    </div>
+                    
+                    <!-- Card 4 -->
+                    <div class="info-card">
+                        <div class="info-card-icon-wrapper">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                        <h3 class="info-card-title">Organized Categories</h3>
+                        <p class="info-card-desc">Filter between Chat, Visual Media, Video, Coding Assistant, and search toolsets dynamically through our pure-CSS tab manager.</p>
+                    </div>
+                    
+                    <!-- Card 5 -->
+                    <div class="info-card">
+                        <div class="info-card-icon-wrapper">
+                            <i class="fa-solid fa-arrow-pointer"></i>
+                        </div>
+                        <h3 class="info-card-title">One-Click Navigation</h3>
+                        <p class="info-card-desc">Navigate to original AI resources immediately. Zero redirections, zero clutter, and direct routes straight to productivity.</p>
+                    </div>
+                    
+                    <!-- Card 6 -->
+                    <div class="info-card">
+                        <div class="info-card-icon-wrapper">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <h3 class="info-card-title">Professional Workflow</h3>
+                        <p class="info-card-desc">Accelerate your professional tasks. Effortlessly jump from visual art creation to source code generation in seconds.</p>
+                    </div>
+                    
+                    <!-- Card 7 -->
+                    <div class="info-card">
+                        <div class="info-card-icon-wrapper">
+                            <i class="fa-solid fa-terminal"></i>
+                        </div>
+                        <h3 class="info-card-title">Save Prompts</h3>
+                        <p class="info-card-desc">Store critical engineering scripts and context parameters so you can deploy them instantly across ChatGPT, Claude, and more.</p>
+                    </div>
+                    
+                    <!-- Card 8 -->
+                    <div class="info-card">
+                        <div class="info-card-icon-wrapper">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="info-card-title">Learn Faster</h3>
+                        <p class="info-card-desc">Reduce learning friction. Stay updated with state-of-the-art developments and discover premium tools built for educational mastery.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- THIRD SECTION: BENEFITS -->
+        <section class="section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-title">Advantages</span>
+                    <h2 class="main-title text-center">Unmatched <span class="gradient-text">Benefits</span></h2>
+                    <div class="divider"></div>
+                    <p class="desc">A modern solution tailored for power users, designed to amplify efficiency, learning capacity, and technological accessibility.</p>
+                </div>
+                
+                <div class="benefits-grid">
+                    <!-- Benefit 1 -->
+                    <div class="glass-card">
+                        <div class="benefit-num">01</div>
+                        <div class="benefit-icon-box">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3 class="benefit-title">Time Saving</h3>
+                            <p class="benefit-desc">Instantly locate any AI engine without searching through endless tabs or search engines, cutting down look-up time by 90% and maintaining maximum focus.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Benefit 2 -->
+                    <div class="glass-card">
+                        <div class="benefit-num">02</div>
+                        <div class="benefit-icon-box">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3 class="benefit-title">Productivity</h3>
+                            <p class="benefit-desc">Seamlessly transition between copywriting, image generation, and code editing. Maintain a continuous flow-state with structured access points.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Benefit 3 -->
+                    <div class="glass-card">
+                        <div class="benefit-num">03</div>
+                        <div class="benefit-icon-box">
+                            <i class="fa-solid fa-book-open"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3 class="benefit-title">Learning</h3>
+                            <p class="benefit-desc">Stay updated with the latest state-of-the-art models and discover niche AI platforms you didn't know existed, fueling rapid skill acquisition.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Benefit 4 -->
+                    <div class="glass-card">
+                        <div class="benefit-num">04</div>
+                        <div class="benefit-icon-box">
+                            <i class="fa-solid fa-folder-tree"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3 class="benefit-title">Organization</h3>
+                            <p class="benefit-desc">Build a structured registry of your AI toolset. Keep prompts, tools, and visual categories organized cleanly in an intuitive, premium layout.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Benefit 5 -->
+                    <div class="glass-card">
+                        <div class="benefit-num">05</div>
+                        <div class="benefit-icon-box">
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3 class="benefit-title">Bookmarks</h3>
+                            <p class="benefit-desc">Ditch cluttered, messy browser bookmarks. Keep your work and AI tool stack in a modern visual wallet built for high-performance operations.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Benefit 6 -->
+                    <div class="glass-card">
+                        <div class="benefit-num">06</div>
+                        <div class="benefit-icon-box">
+                            <i class="fa-solid fa-boxes-packing"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3 class="benefit-title">AI Collection</h3>
+                            <p class="benefit-desc">A curated, premium registry of industry-leading AI tools. Perfect for professional creators, developers, designers, and tech students alike.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Brand Col -->
+                <div class="footer-brand-box">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fa-solid fa-wallet"></i> AI Wallet
+                    </a>
+                    <p class="footer-desc">
+                        A modern, high-performance visual repository storing the internet's most elite generative models, coding assistants, and search architectures.
+                    </p>
+                    <div class="footer-credit">
+                        Made with <i class="fa-solid fa-heart"></i> by <strong>Kartik Saxena</strong>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="footer-col-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li class="footer-link-item"><a href="index.html" class="active"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+                        <li class="footer-link-item"><a href="ai-tools.html"><i class="fa-solid fa-chevron-right"></i> AI Tools</a></li>
+                        <li class="footer-link-item"><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact info -->
+                <div>
+                    <h4 class="footer-col-title">Get In Touch</h4>
+                    <div class="footer-contact-info">
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-user"></i>
+                            <span>Kartik Saxena</span>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>B.Tech CSE Student</span>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:kartik.saxena.btech@gmail.com">kartik.saxena.btech@gmail.com</a>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright-text">
+                    &copy; 2026 AI Wallet. All rights reserved. Built purely with HTML5 and CSS3.
+                </div>
+                <div class="footer-socials">
+                    <a href="#" class="footer-social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="footer-social-btn" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" class="footer-social-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="footer-social-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
